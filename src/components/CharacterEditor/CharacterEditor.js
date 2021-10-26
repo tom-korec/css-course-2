@@ -3,7 +3,7 @@ import React from 'react';
 import {
   defaultSkinColor,
   defaultClothesColor,
-} from '../../constants';
+} from 'src/constants';
 import Character from '../Character';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import ControlPane from '../ControlPane';
@@ -30,6 +30,7 @@ function App() {
 
   return (
     <main className={styles.characterEditor}>
+      <div className={styles.background}/>
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
         <header className={styles.header}>
           <h1 className={styles.title}>Create your Character</h1>
